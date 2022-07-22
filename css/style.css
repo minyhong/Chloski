@@ -1,0 +1,239 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+     font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+     display: flex;
+     align-items: center;
+     padding: 20px;
+}
+
+nav {
+     flex: 1;
+     text-align: right;
+}
+
+nav ul {
+     display: inline-block;
+     list-style-type: none;
+}
+
+nav ul li {
+     display: inline-block;
+     margin-right: 20px;
+}
+
+.logo {
+     width: 180px;
+}
+
+a {
+     text-decoration: none;
+     color: #555;
+}
+
+.container {
+     margin: auto;
+     padding-left: 15px;
+     padding-right: 15px;
+     height: 700px;
+}
+
+.top-page {
+     background-color: rgb(190, 200, 210);
+     background-image: linear-gradient(to right, transparent, 90%, rgb(190, 200, 210)), url('../images/chloes-nailpics/IMG_9859.jpg');
+     background-size: 725px;
+     background-position: bottom left;
+     background-repeat: no-repeat;
+     padding: 0;
+
+     /* used to prevent margin collapse */
+     display: flow-root;
+
+}
+
+.row {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     height: 500px;
+}
+
+.col-2 {
+     background-color: rgb(190, 200, 210, 80%);
+     border-radius: 5%;
+     padding: 25px;
+     flex-basis: 60%;
+     max-width: 500px;
+}
+
+.col-2 h1 {
+     color: white;
+     font-size: 80px;
+     line-height: 60px;
+     margin: 25px 0;
+}
+
+.title-container {
+     width: 600px;
+     flex-grow: 2;
+}
+
+@media only screen and (min-width: 1200px) {
+     .row {
+          position: relative;
+     }
+     .col-2 {
+          position: absolute;
+          left: 700px;
+          top: 100px;
+     }
+}
+
+/* .box {
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+     height: 500px;
+} */
+
+/* image slider */
+.portfolio {
+     position: relative;
+     overflow: hidden;
+     padding: 20px;
+}
+
+.product-category {
+     padding: 0 10 vw;
+     font-size: 30px;
+     font-weight: 500;
+     margin-bottom: 40px;
+     text-transform: capitalize;
+     text-align: center;
+}
+
+.product-container {
+     padding: 0 5vw;
+     display: flex;
+     overflow-x: auto;
+     scroll-behavior: smooth;
+     margin: 0 5%;
+}
+
+.product-container::-webkit-scrollbar {
+     display: none;
+}
+
+.box {
+     flex: 0 0 auto;
+     height: 500px;
+     margin-right: 20px;
+}
+
+.slide-img {
+     position: relative;
+     box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+     border-radius: 10px;
+     overflow: hidden;
+     height: 450px;
+     width: 350px;
+}
+
+.slide-img img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.btn-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.pre-btn,
+.nxt-btn {
+     border: none;
+     border-radius: 10%;
+     margin-top: 33%;
+     width: 5vw;
+     height: 10%;
+     position: absolute;
+     top: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: rgba(255, 255, 255, 0.5);
+     cursor: pointer;
+     z-index: 8;
+}
+
+.pre-btn {
+     left: 10px;
+     transform: rotate(180deg);
+}
+
+.nxt-btn {
+     right: 10px;
+}
+
+.pre-btn img,
+.nxt-btn img {
+     opacity: 0.4;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+     opacity: 1;
+}
+/* 
+.collection-container {
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 10px;
+ }
+   
+.collection {
+     position: relative;
+}
+   
+.collection img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+   
+.collection:nth-child(3) {
+     grid-column: span 2;
+     margin-bottom: 10px;
+} */
+   
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
