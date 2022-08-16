@@ -29,6 +29,10 @@ body {
      padding: 20px;
 }
 
+.nav_menu {
+     font-size: 14px;
+}
+
 nav {
      flex: 1;
      text-align: right;
@@ -70,7 +74,6 @@ a {
 
      /* used to prevent margin collapse */
      display: flow-root;
-
 }
 
 .row {
@@ -101,6 +104,12 @@ a {
      flex-grow: 2;
 }
 
+@media only screen and (max-width: 700px) {
+     .top-page {
+          background-position: center;
+     }
+}
+
 @media only screen and (min-width: 1200px) {
      .row {
           position: relative;
@@ -120,21 +129,22 @@ a {
      height: 500px;
 } */
 
-/* image slider */
-.portfolio {
-     background-color: rgb(190, 200, 210);
-     position: relative;
-     overflow: hidden;
-     padding: 20px;
-}
-
-.product-category {
+.product-category,
+.about-category {
      padding: 0 10 vw;
-     font-size: 30px;
+     font-size: 40px;
      font-weight: 500;
      margin-bottom: 40px;
      text-transform: capitalize;
      text-align: center;
+}
+
+/* image slider */
+.portfolio {
+     /* background-color: rgb(190, 200, 210); */
+     position: relative;
+     overflow: hidden;
+     padding: 20px;
 }
 
 .product-container {
@@ -157,7 +167,7 @@ a {
 
 .slide-img {
      position: relative;
-     box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+     /* box-shadow: 2px 2px 30px rgba(0,0,0,0.2); */
      border-radius: 10px;
      overflow: hidden;
      height: 450px;
