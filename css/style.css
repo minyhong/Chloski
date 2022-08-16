@@ -139,6 +139,16 @@ a {
      text-align: center;
 }
 
+/* about me section */
+.aboutme-container {
+     display: flex;
+     height: 450px;
+}
+
+.artist-image img {
+     height: 400px;
+}
+
 /* image slider */
 .portfolio {
      /* background-color: rgb(190, 200, 210); */
