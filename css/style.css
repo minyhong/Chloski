@@ -142,11 +142,32 @@ a {
 /* about me section */
 .aboutme-container {
      display: flex;
-     height: 450px;
+     justify-content: center;
+     height: 550px;
+}
+
+.about-me {
+     display: flex;
+     justify-content: space-between;
+     width: 85%;
+}
+
+.about-me-paragraph {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.about-me-paragraph p {
+     width: 65%;
+}
+
+.about-category {
+     width: 25%;
 }
 
 .artist-image img {
-     height: 400px;
+     height: 500px;
 }
 
 /* image slider */
