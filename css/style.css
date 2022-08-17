@@ -104,23 +104,6 @@ a {
      flex-grow: 2;
 }
 
-@media only screen and (max-width: 700px) {
-     .top-page {
-          background-position: center;
-     }
-}
-
-@media only screen and (min-width: 1200px) {
-     .row {
-          position: relative;
-     }
-     .col-2 {
-          position: absolute;
-          left: 700px;
-          top: 100px;
-     }
-}
-
 /* .box {
      display: flex;
      justify-content: center;
@@ -139,35 +122,9 @@ a {
      text-align: center;
 }
 
-/* about me section */
-.aboutme-container {
-     display: flex;
-     justify-content: center;
-     height: 550px;
-}
-
-.about-me {
-     display: flex;
-     justify-content: space-between;
-     width: 85%;
-}
-
-.about-me-paragraph {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-}
-
-.about-me-paragraph p {
-     width: 65%;
-}
-
-.about-category {
-     width: 25%;
-}
-
+/* About Chlo section */
 .artist-image img {
-     height: 500px;
+     width: 100%;
 }
 
 /* image slider */
@@ -198,7 +155,7 @@ a {
 
 .slide-img {
      position: relative;
-     /* box-shadow: 2px 2px 30px rgba(0,0,0,0.2); */
+     box-shadow: 3px 3px 12px rgba(0,0,0,0.2);
      border-radius: 10px;
      overflow: hidden;
      height: 450px;
@@ -274,7 +231,60 @@ a {
      grid-column: span 2;
      margin-bottom: 10px;
 } */
-   
+
+@media only screen and (max-width: 700px) {
+     .top-page {
+          background-position: center;
+     }
+}
+
+@media only screen and (min-width: 1200px) {
+     .row {
+          position: relative;
+     }
+     .col-2 {
+          position: absolute;
+          left: 700px;
+          top: 100px;
+     }
+}
+
+@media only screen and (min-width: 600px) {
+     /* about me section */
+     .aboutme-container {
+          display: flex;
+          justify-content: center;
+          height: 450px;
+     }
+
+     .about-me {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-left: 150px;
+          padding-right: 150px;
+     }
+
+     .about-me-paragraph {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-grow: 1;
+     }
+
+     .about-me-paragraph p {
+          width: 35%;
+     }
+
+     .about-category {
+          width: 25%;
+     }
+
+     .artist-image {
+          flex-grow: 2;
+     }
+
+}
 
 /******************************************
 /* ADDITIONAL STYLES
