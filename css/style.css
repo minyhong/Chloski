@@ -23,14 +23,32 @@ body {
      font-family: 'Poppins', sans-serif;
 }
 
-.navbar {
+.bar {
      display: flex;
      align-items: center;
-     padding: 20px;
+     padding: 5px 20px;
 }
 
-.nav_menu {
+/* Navbar */
+
+.navbar {
      font-size: 14px;
+     background-color: white;
+     display: flex;
+     padding: 16px;
+     color: rgb(230, 230, 230);
+}
+
+.navbar-link {
+     padding-right: 8px;
+}
+
+/* .navbar-items {
+     display: flex;
+} */
+
+.navbar-link-toggle {
+     display: none;
 }
 
 nav {
@@ -67,8 +85,8 @@ a {
 .top-page {
      background-color: rgb(190, 200, 210);
      background-image: linear-gradient(to right, transparent, 90%, rgb(190, 200, 210)), url('../images/chloes-nailpics/IMG_9859.jpg');
-     background-size: 725px;
-     background-position: bottom left;
+     background-size: 780px;
+     background-position: top left;
      background-repeat: no-repeat;
      padding: 0;
 
@@ -87,6 +105,7 @@ a {
 .col-2 {
      background-color: rgb(190, 200, 210, 80%);
      border-radius: 5%;
+     margin-top: 100px;
      padding: 25px;
      flex-basis: 60%;
      max-width: 500px;
@@ -232,9 +251,37 @@ a {
      margin-bottom: 10px;
 } */
 
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
 @media only screen and (max-width: 700px) {
      .top-page {
           background-position: center;
+     }
+
+     .navbar-items,
+     .navbar {
+          flex-direction: column;
+     }
+
+     .navbar-items {
+          display: none;
+     }
+
+     .navbar-items-right {
+          margin-left: 0px;
+     }
+
+     .navbar-toggleshow {
+          display: flex;
+     }
+
+     .navbar-link-toggle {
+          align-self: flex-end;
+          display: initial;
+          position: absolute;
+          cursor: pointer;
      }
 }
 
@@ -243,9 +290,14 @@ a {
           position: relative;
      }
      .col-2 {
+          background: none;
           position: absolute;
           left: 700px;
           top: 100px;
+     }
+
+     .top-page {
+          height: 100vh;
      }
 }
 
@@ -269,7 +321,6 @@ a {
           display: flex;
           justify-content: center;
           align-items: center;
-          flex-grow: 1;
      }
 
      .about-me-paragraph p {
@@ -281,6 +332,11 @@ a {
      }
 
      .artist-image {
+          flex-grow: 2;
+          display: flex;
+     }
+
+     .artist-image img{
           flex-grow: 2;
      }
 

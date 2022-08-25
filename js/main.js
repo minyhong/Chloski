@@ -16,3 +16,11 @@ productContainers.forEach((item, i) => {
 })
 
 console.log(connected)
+
+function classToggle() {
+    const navs = ducument.querySelectorAll('navbar-items')
+
+    navs.forEach(nav => nav.classList.toggle('navbar-toggleshow'));
+}
+
+document.querySelector('navcar-link-toggle').addEventListener('click', classToggle)
