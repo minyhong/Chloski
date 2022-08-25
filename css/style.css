@@ -29,13 +29,16 @@ body {
      padding: 5px 20px;
 }
 
+.logo {
+     align-self: center;
+}
+
 /* Navbar */
 .navbar {
-     font-size: 14px;
-     background-color: white;
+     font-size: 15px;
      display: flex;
      padding: 16px;
-     color: rgb(230, 230, 230);
+     color: black;
 }
 
 .navbar-link {
@@ -44,7 +47,7 @@ body {
 
 .navbar-items {
      display: flex;
-     justify-content: end;
+     justify-content: flex-end;
 }
 
 .navbar-link-toggle {
@@ -85,8 +88,9 @@ a {
 .top-page {
      background-color: rgb(190, 200, 210);
      background-image: linear-gradient(to right, transparent, 90%, rgb(190, 200, 210)), url('../images/chloes-nailpics/IMG_9859.jpg');
-     background-size: 780px;
-     background-position: top left;
+     height: 100vh;
+     background-size: 950px;
+     background-position: bottom left;
      background-repeat: no-repeat;
      padding: 0;
 
@@ -261,6 +265,10 @@ a {
      }
 
      /* Collaspable navbar */
+
+     .bar {
+          align-items: flex-end;
+     }
      .navbar-items,
      .navbar {
           flex-direction: column;
@@ -268,10 +276,6 @@ a {
 
      .navbar-items {
           display: none;
-     }
-
-     .navbar-items-right {
-          margin-right: 0;
      }
 
      .navbar-toggleshow {
