@@ -103,13 +103,13 @@ a {
      align-items: center;
      flex-wrap: wrap;
      justify-content: space-around;
-     height: 500px;
+     height: 90vh;
 }
 
 .col-2 {
      background-color: rgb(190, 200, 210, 80%);
      border-radius: 5%;
-     margin-top: 150px;
+     margin: auto auto;
      padding: 25px;
      flex-basis: 60%;
      max-width: 500px;
@@ -290,15 +290,16 @@ a {
      }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
      .row {
           position: relative;
      }
      .col-2 {
+          margin-top: 250px;
           background: none;
           position: absolute;
-          left: 700px;
-          top: 50px;
+          left: 900px;
+          top: -25px;
      }
 
      .top-page {
